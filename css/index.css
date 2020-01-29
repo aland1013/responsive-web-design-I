@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 body {
-  width: 650px;
+  width: 40%;
   margin: auto;
 }
 
@@ -75,66 +75,66 @@ body {
 }
 
 header {
-  width: 90%;
+  width: 95%;
   margin: 20px auto 0;
-  flex-flow: row nowrap;
   align-items: center;
 }
 
 nav {
-  width: 74%;
-  vertical-align: middle;
+  width: 80%;
 }
 
 nav a {
-  width: 15%;
+  width: 16%;
   color: lightgray;
   text-decoration: none;
   font-size: 60%;
 }
 
 .logo {
-  display: inline-block;
-  width: 25%;
+  width: 20%;
   vertical-align: middle;
 }
 
 .top-section {
-  width: 90%;
-  margin: 100px auto 50px auto;
+  width: 95%;
+  margin: 35px auto 50px auto;
 }
 
 .title-div {
-  display: inline-block;
-  width: 49%;
+  width: 50%;
+  flex-direction: column;
   text-align: center;
-  vertical-align: middle;
+  padding: 40px 0 0 40px;
+}
+
+.title-div h1 {
+  margin-bottom: 0;
 }
 
 .top-img {
-  display: inline-block;
   width: 50%;
-  padding-left: 25px;
-  vertical-align: middle;
+  padding: 5px 0 0 35px;
 }
 
 button {
-  /* font-size: 53px; */
-  width: 30%;
+  width: 50%;
+  margin: 5px auto;
   padding: 5px;
-  margin: auto;
   border: 1px solid black;
 }
 
 .middle-section {
+  flex-flow: row wrap;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  width: 90%;
+  width: 95%;
   margin: auto;
+  padding-bottom: 5px;
 }
 
 .middle-box {
-  display: inline-block;
+  
   padding: 20px 0;
 }
 
@@ -143,7 +143,7 @@ button {
 }
 
 .top-right {
-  width: 49%;
+  width: 50%;
 }
 
 .middle-img {
@@ -151,18 +151,18 @@ button {
 }
 
 .bottom {
-  width: 32%;
+  width: 33%;
 }
 
 .contact-section {
-  width: 90%;
+  width: 95%;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0 100px 0;
+  padding: 10px 0 100px 0;
 }
 
 h1 {
@@ -170,8 +170,8 @@ h1 {
 }
 
 h2 {
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 9px;
+  margin-bottom: 15px;
 }
 
 p, footer {

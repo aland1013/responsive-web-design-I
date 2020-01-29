@@ -70,20 +70,23 @@ body {
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 header {
   width: 90%;
-  margin: auto;
-  padding: 20px 0;
+  margin: 20px auto 0;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 nav {
-  display: inline-block;
   width: 74%;
   vertical-align: middle;
 }
 
 nav a {
-  display: inline-block;
   width: 15%;
   color: lightgray;
   text-decoration: none;
@@ -173,6 +176,26 @@ h2 {
 
 p, footer {
   font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 98%;
+  }
+  
+  header {
+    flex-flow: column-reverse;
+    margin-top: 20px;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  nav a {
+    width: calc(100% / 6);
+  }
 }
 
 

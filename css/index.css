@@ -65,8 +65,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* desktop layout - 1024 x 1388 */
 body {
-  width: 40%;
+  width: 45%;
   margin: auto;
 }
 
@@ -76,7 +78,7 @@ body {
 
 header {
   width: 95%;
-  margin: 20px auto 0;
+  margin: 15px auto 0;
   align-items: center;
 }
 
@@ -88,7 +90,7 @@ nav a {
   width: 16%;
   color: lightgray;
   text-decoration: none;
-  font-size: 60%;
+  font-size: .8vw;
 }
 
 .logo {
@@ -98,14 +100,14 @@ nav a {
 
 .top-section {
   width: 95%;
-  margin: 35px auto 50px auto;
+  margin: 35px auto;
 }
 
 .title-div {
   width: 50%;
   flex-direction: column;
   text-align: center;
-  padding: 40px 0 0 40px;
+  padding: 30px 0 0 10%;
 }
 
 .title-div h1 {
@@ -114,13 +116,14 @@ nav a {
 
 .top-img {
   width: 50%;
-  padding: 5px 0 0 35px;
+  padding: 5px 0 0 7%;
 }
 
 button {
   width: 50%;
-  margin: 5px auto;
-  padding: 5px;
+  font-size: .8vw;
+  margin: 10px auto;
+  padding: 2%;
   border: 1px solid black;
 }
 
@@ -135,7 +138,7 @@ button {
 
 .middle-box {
   
-  padding: 20px 0;
+  padding: 18px 0 16px 0;
 }
 
 .top-left {
@@ -162,39 +165,97 @@ button {
 
 footer {
   text-align: center;
-  padding: 10px 0 100px 0;
+  padding: 15px 0 100px 0;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 3.5vw;
 }
 
 h2 {
-  font-size: 9px;
-  margin-bottom: 15px;
+  font-size: .7vw;
+  margin-bottom: 10px;
 }
 
 p, footer {
-  font-size: 10px;
+  font-size: .8vw;
 }
 
+.contact-section p {
+  padding-bottom: 5px;
+}
+
+/* tablet layout - 800 x 1370 */
 @media (max-width: 800px) {
   body {
-    width: 98%;
+    width: 50%;
   }
   
   header {
     flex-flow: column-reverse;
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+
+  .logo {
+    width: 25%;
   }
 
   nav {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 
   nav a {
     width: calc(100% / 6);
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  .title-div {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  button {
+    width: 25%;
+    font-size: 1vw;
+    padding: 1%;
+  }
+
+  .top-img {
+    display: none;
+  }
+
+  .top-section {
+    margin-bottom: 30px;
+  }
+
+  .middle-box {
+  
+    padding: 18px 2% 20px 1%;
+  }
+
+  /* .middle-box {
+    padding-left: 1%;
+    padding-right: 2%;
+  } */
+
+  h2 {
+    font-size: .9vw;
+  }
+
+  .contact-section {
+    padding-left: 1%;
+  }
+
+  p, footer {
+    font-size: 1vw;
   }
 }
 
